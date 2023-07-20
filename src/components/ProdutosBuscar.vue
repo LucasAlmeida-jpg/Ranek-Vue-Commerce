@@ -1,5 +1,6 @@
 <template>
-  <h1>teste</h1>
+ <!-- <input type="text"> -->
+ <h1>teste</h1>
 </template>
 
 <script>
