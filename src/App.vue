@@ -12,10 +12,11 @@
 
 import TheHeader from "@/components/TheHeader.vue"
 import TheFooter from "@/components/TheFooter.vue"
+
 export default {
   components: {
     TheFooter,
-    TheHeader
+    TheHeader,
   }
 }
 </script>
@@ -83,6 +84,7 @@ img {
   min-height: 100vh;
 
 }
+
 #main {
   flex: 1;
 }
