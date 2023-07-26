@@ -1,8 +1,7 @@
 <template>
   <form>
-    <input name="busca" id="busca" type="text" v-model="busca">
+    <input name="busca" id="busca" type="text" v-model="busca" placeholder="Buscar">
     <input type="submit" id="lupa" value="Buscar" @click.prevent="buscarProdutos">
-    {{ busca }}
   </form>
 </template>
 
@@ -20,3 +19,35 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+form {
+  max-width: 600px;
+  margin: 30px auto 60px auto;
+  position: relative;
+}
+
+#busca {
+  width: 100%;
+  border: none;
+  padding: 20px;
+}
+
+#busca:focus,
+#busca:hover {
+  transform: scale(1.1);
+}
+
+#lupa {
+  width: 62px;
+  height: 62px;
+  background: url(../assets/search.svg) no-repeat center center;
+  text-indent: -150px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  box-shadow: none;
+}
+</style>
