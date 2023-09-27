@@ -2,7 +2,9 @@
   <div id="app">
     <TheHeader />
     <main id="main">
-      <router-view />
+      <transition mode="out-in">
+        <router-view />
+      </transition>
     </main>
     <TheFooter />
   </div>
@@ -56,6 +58,10 @@ a {
 img {
   max-width: 100%;
   display: block;
+}
+
+label {
+  margin-bottom: 5px;
 }
 
 .btn {
@@ -114,10 +120,12 @@ textarea:focus {
 .v-leave-to {
   opacity: 0;
 }
+
 .v-enter {
   transform: translate3d(0 -20px 0);
 }
-.v-leave-to{
+
+.v-leave-to {
   transform: translate3d(0 20px 0);
 }
 
